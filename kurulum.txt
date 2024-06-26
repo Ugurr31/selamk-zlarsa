@@ -1,0 +1,30 @@
+# KURULUM
+1. Sisteminize Node.js programını indirin. https://nodejs.org/tr
+2. Node.js kuruluyken install isimli dosyayı çalıştırın ve kurulumun bitmesini bekleyin.
+3. src > data > config isimli dosyanın içini dikkatlice doldurun. (MONGO_URI kısmını değiştirmenize gerek yok.)
+4. Dilerseniz src > data > emoji bölümünde bulunan emojileri kendinize göre değiştirebilirsiniz.
+5. start isimli dosyayı çalıştırarak projeyi başlatabilirsiniz.
+
+# DISCORD BOTU NASIL OLUŞTURULUR
+1. Discord Developer Portal sitesine girin. https://discord.com/developers/applications
+2. Hesabınıza giriş yaptıktan sonra sağ üst kısımda bulunan New Application butonuna tıklayın.
+3. Açılan menüye uygulamanızın adını girip, altında bulunan kutucuğu işaretleyin ve Create butonuna tıklayın.
+4. Uygulama oluşturulduktan sonra General Information bölümüne yönlendirilirsiniz ve buradan uygulamanızın profil fotoğrafını ayarlayabilirsiniz.
+	- Alt kısımda bulunan APPLICATION ID'yi kopyalayın ve projede config de bulunan DISCORD_CLIENT_ID bölümüne yerleştirin.
+5. Sol kısımdan Bot sekmesine girin.
+	- Reset Token diyerek botunuzun tokenini kopyalayın ve projede config de bulunan DISCORD_BOT_TOKEN bölümüne yerleştirin.
+	- Alt kısımda bulunan PUBLIC BOT kategorisindeki seçeneği kapalı hale getirin.
+	- Privileged Gateway Intents kategorisinde bulunan "PRESENCE INTENT, SERVER MEMBERS INTENT ve MESSAGE CONTENT INTENT" alt kategorilerinin seçeneklerini aktif hale getirin.
+
+# BOTU SUNUCUYA EKLEME
+1. Botunuzun sayfasına girin ve sol kısımdaki OAuth2 seçeneğine tıklayıp URL Generator seçeneğini seçin.
+2. Karşınıza çıkan seçenekler arasından orta kısımda bulunan bot ve sol kısımda bulunan applications.commands tiklerini seçin.
+3. Aşağıya açılan yeni menüde sol üst kısımda bulunan Administrator tikini işaretleyin.
+4. En alta oluşturulan botunuzun ekleme linkini tarayıcınıza yapıştırarak botu sunucunuza ekleyebilirsiniz.
+
+# TESLİM HESABI AYARLAMA
+1. Projeyi başlattıktan sonra /panel komutunu kullanın.
+2. Karşınıza gelen seçim menüsünde config de SELFBOT_TOKENS bölümüne girmiş olduğunuz tokenlerin sıralaması gözükecektir.
+3. Teslim hesabı seçiminden sonra proje otomatik olarak yeniden başlar ve kullanıma hazır hale gelir.
+4. /oluştur ile teslim kodu oluşturabilir ve /kodlar komutu ile oluşturulan teslimat kodlarını görüntüleyebilirsiniz.
+5. Kodları silmek için /delete komutunu kullanabilirsiniz.
